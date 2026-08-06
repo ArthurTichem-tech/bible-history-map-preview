@@ -1,0 +1,1 @@
+var e=`bible-history-map.anonymous-session`,t=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i,n=null;function r(){if(n)return n;try{let r=window.sessionStorage.getItem(e);if(r&&t.test(r))return n=r,r;let i=window.crypto.randomUUID();return window.sessionStorage.setItem(e,i),n=i,i}catch{return null}}export{r as t};
