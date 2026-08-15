@@ -1,1 +1,0 @@
-import{supabase as e}from"./supabase-CvBqaoVp.js";import{t}from"./anonymousSession-B7qdMtSC.js";async function n(n,r){if(!e)return;let i=t();if(!i)return;let{error:a}=await e.rpc(`track_content_view`,{p_entity_type:n,p_entity_id:r,p_session_id:i})}export{n as trackContentView};
